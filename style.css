@@ -1,0 +1,20 @@
+.input {
+    border: 1px solid lightgray;
+}
+
+.submit {
+    background-color: lightgreen;
+    /**
+     * If the input field has a border,
+     * you need it here too to achieve equal heights.
+     */
+    border: 1px solid transparent;
+}
+
+/**
+ * Firefox Fix
+ * Without that the submit button will be too high.
+ */
+.submit::-moz-focus-inner { 
+    border: 0;
+}
